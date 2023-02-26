@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invoice</title>
+	<link rel="stylesheet" type="text/css" href="./invoice.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="invoice_wrapper">
+		<div class="header">
+			<div class="logo_invoice_wrap">
+				<div class="logo_sec">
+					
+					<div class="title_wrap">
+						<p class="title bold">32 ALE</p>
+					</div>
+				</div>
+				<div class="invoice_sec">
+					<p class="date">
+						<span class="bold">Date</span>
+						<span>08/Jan/2023</span>
+					</p>
+				</div>
+			</div>
+			<div class="bill_total_wrap">
+				<div class="bill_sec">
+					<p>Bill To</p> 
+	          		<p class="bold name">Anmol</p>
+			        <span>26/4 vikas vihar Firozpur<br/>
+			           +91 7986768071
+			        </span>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="main_table">
+				<div class="table_header">
+					<div class="row">
+						<div class="col col_no">Date</div>
+						<div class="col col_price">kW</div>
+						<div class="col col_qty">Load</div> 
+						<div class="col col_total">TOTAL</div>
+					</div>
+				</div>
+				<div class="table_body">
+					<div class="row">
+						<div class="col col_no">
+							<p>Jan-Feb 2022</p>
+						</div>
+						<div class="col col_price">
+							<p>210</p>
+						</div>
+						<div class="col col_qty">
+							<p>2kW</p>
+						</div>
+						<div class="col col_total">
+							<p>Rs 1226.40</p>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col col_no">
+							<p>March-April 2022</p>
+						</div>
+						<div class="col col_price">
+							<p>246</p>
+						</div>
+						<div class="col col_qty">
+							<p>2kW</p>
+						</div>
+						<div class="col col_total">
+							<p>Rs 1436.64</p>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col col_no">
+							<p>May-June 2022</p>
+						</div>
+						<div class="col col_price">
+							<p>340</p>
+						</div>
+						<div class="col col_qty">
+							<p>2 kW</p>
+						</div>
+						<div class="col col_total">
+							<p>Rs 2662.20</p>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col col_no">
+							<p>July-Aug 2022</p>
+						</div>
+						<div class="col col_price">
+							<p>96</p>
+						</div>
+						<div class="col col_qty">
+							<p>2kw</p>
+						</div>
+						<div class="col col_total">
+							<p>Rs 335.04</p>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col col_no">
+							<p>Sep-Oct 2022</p>
+						</div>
+						<div class="col col_price">
+							<p>206</p>
+						</div>
+						<div class="col col_qty">
+							<p>2 kW</p>
+						</div>
+						<div class="col col_total">
+							<p>Rs 1203.04</p>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col col_no">
+							<p>Nov-Dec 2022</p>
+						</div>
+						<div class="col col_price">
+							<p>80</p>
+						</div>
+						<div class="col col_qty">
+							<p>2 kW</p>
+						</div>
+						<div class="col col_total">
+							<p>Rs 279.20</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="paymethod_grandtotal_wrap">
+				<div class="grandtotal_sec" style="padding: 10px;">
+			        <p class="bold">
+			            <span>SUB TOTAL</span>
+			            <span>Rs 7142.52</span>
+			        </p>
+			        <p>
+			            <span>GST 18%</span>
+			            <span>Rs 1285.65</span>
+			        </p>
+			       	<p class="bold">
+			            <span style=>Grand Total  =</span>
+						
+			            <span>Rs 8428.17</span>
+			        </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="download-pdf">Download PDF</button>
+</div>
+
+
+
+
+<script type="module" src="inovice.js"></script>
+
+</body>
+</html>
